@@ -1,0 +1,52 @@
+--- Đẩy code từ local lên remote
+
+
+
++repository local : souce code trong máy tính
+
++repository remote : souce lưu trên github
+
+- liên kết vscode và github
+git config --global user.name "Your name"
+git config --global user.email "your@email.com"
+
+- liên kết giữa repo local và repo remote
+git remote add origin url-repo
+
+
+
+
+
+
+
+-- Đẩy lần đầu ( trên github chưa có nhánh master)
+git add -A
+git commit -m " create home page html "
+git push -u origin [tên nhánh hiện tại]
+
+
+
+-- Đẩy lần 2 trở đi
+git add -A
+git commit -m " create home page html "
+git push
+
+
+
+--- Xem các nhánh đang có trong máy
+git branch
+
+
+--- Gom code từ 2 login về master ( đứng tại nhánh master )
+
+git merge login
+-- Tạo nhánh
+git checkout -b [tên nhánh]
+
+-- Chuyển nhánh
+
+git checkout [tên nhánh]
+
+
+
+--- Xung đột code ( conflict code ) : xảy ra khi mer ge và pull => tuỳ trường hợp sẽ option phù hợp nhất ( incomming, current, keep both)
