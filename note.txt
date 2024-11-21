@@ -3,7 +3,6 @@
 +repository local : souce code trong máy tính
 
 +repository remote : souce lưu trên github
-
 - liên kết vscode và github
 git config --global user.name "Your name"
 git config --global user.email "your@email.com"
